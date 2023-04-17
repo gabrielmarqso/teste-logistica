@@ -1,0 +1,65 @@
+<div id="map" style="height: 400px"></div>
+
+<form (ngSubmit)="onSearch()" #searchForm="ngForm">
+  <div class="p-grid">
+    <div class="p-col-12 p-md-3">
+      <div class="p-floatlabel">
+        <label for="street">Rua</label>
+        <input
+          type="text"
+          id="street"
+          name="street"
+          [(ngModel)]="street"
+          placeholder="Digite o nome da rua"
+          required
+          pInputText
+        />
+      </div>
+    </div>
+    <div class="p-col-12 p-md-3">
+      <div class="p-floatlabel">
+        <label for="number">Número</label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          [(ngModel)]="number"
+          placeholder="Digite o número"
+          required
+          pInputText
+        />
+      </div>
+    </div>
+    <div class="p-col-12 p-md-3">
+      <div class="p-floatlabel">
+        <label for="neighborhood">Bairro</label>
+        <input
+          type="text"
+          id="neighborhood"
+          name="neighborhood"
+          [(ngModel)]="neighborhood"
+          placeholder="Digite o bairro"
+          required
+          pInputText
+        />
+      </div>
+    </div>
+    <div class="p-col-12 p-md-3">
+      <div class="p-floatlabel">
+        <label for="city">Cidade</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          [(ngModel)]="city"
+          placeholder="Digite a cidade"
+          required
+          pInputText
+        />
+      </div>
+    </div>
+    <div class="p-col-12">
+      <button type="submit" class="p-button p-button-primary">Buscar</button>
+    </div>
+  </div>
+</form>
